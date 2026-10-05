@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="mW947yUbUJltRwdeGLt62XJcrUTtMJ0SpboIwT7K">
+    <meta name="description" content="FoundU - Platform Lost and Found Mahasiswa Kampus">
+    <title>Laporkan Barang — Lost & Found Kampus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://mandatory-gently-tired-presidential.trycloudflare.com/build/assets/app-C7_LOZh2.css" /><link rel="modulepreload" as="script" href="https://mandatory-gently-tired-presidential.trycloudflare.com/build/assets/app-BJf8cxTy.js" /><link rel="stylesheet" href="https://mandatory-gently-tired-presidential.trycloudflare.com/build/assets/app-C7_LOZh2.css" /><script type="module" src="https://mandatory-gently-tired-presidential.trycloudflare.com/build/assets/app-BJf8cxTy.js"></script></head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-foundu">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="https://mandatory-gently-tired-presidential.trycloudflare.com/items">
+                <i class="bi bi-search-heart me-2 fs-4"></i>
+                <span>FoundU</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://mandatory-gently-tired-presidential.trycloudflare.com/items">
+                            <i class="bi bi-box-seam me-1"></i> Barang Temuan
+                        </a>
+                    </li>
+                                                                        <li class="nav-item">
+                                <a class="nav-link " href="https://mandatory-gently-tired-presidential.trycloudflare.com/admin/dashboard">
+                                    <i class="bi bi-speedometer2 me-1"></i> Dashboard
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="https://mandatory-gently-tired-presidential.trycloudflare.com/admin/categories">
+                                    <i class="bi bi-tags me-1"></i> Kategori
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="https://mandatory-gently-tired-presidential.trycloudflare.com/admin/pickup-points">
+                                    <i class="bi bi-geo-alt me-1"></i> Titik Pengambilan
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="https://mandatory-gently-tired-presidential.trycloudflare.com/admin/reports">
+                                    <i class="bi bi-flag me-1"></i> Laporan
+                                </a>
+                            </li>
+                                                            </ul>
+                <ul class="navbar-nav">
+                                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                <i class="bi bi-person-circle me-1"></i> Administrator
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="https://mandatory-gently-tired-presidential.trycloudflare.com/profile"><i class="bi bi-gear me-2"></i>Profil</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <form method="POST" action="https://mandatory-gently-tired-presidential.trycloudflare.com/logout">
+                                        <input type="hidden" name="_token" value="mW947yUbUJltRwdeGLt62XJcrUTtMJ0SpboIwT7K" autocomplete="off">                                        <button type="submit" class="dropdown-item" style="color: #f87171;"><i class="bi bi-box-arrow-right me-2"></i>Logout</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="container mt-3">
+                    </div>
+
+    
+    <main class="container py-4">
+        <div class="row justify-content-center">
+    <div class="col-lg-8 fade-in-up">
+        <div class="card card-glass border-0" style="border-radius: var(--radius-lg);">
+            <div class="card-body p-4 p-md-5">
+                <h3 class="page-title mb-1">Laporkan Barang Temuan</h3>
+                <p class="text-muted mb-4 mt-2">Isi form berikut untuk melaporkan barang yang Anda temukan</p>
+
+                <form method="POST" action="https://mandatory-gently-tired-presidential.trycloudflare.com/items" enctype="multipart/form-data">
+                    <input type="hidden" name="_token" value="mW947yUbUJltRwdeGLt62XJcrUTtMJ0SpboIwT7K" autocomplete="off">                    <div class="mb-3">
+                        <label for="name" class="form-label">Nama Barang <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control " id="name" name="name" value="" placeholder="Contoh: Dompet Hitam" required>
+                                            </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Deskripsi <span class="text-danger">*</span></label>
+                        <textarea class="form-control " id="description" name="description" rows="4" placeholder="Jelaskan ciri-ciri barang yang ditemukan" required></textarea>
+                                            </div>
+                    <div class="row g-3">
+                        <div class="col-md-6 mb-3">
+                            <label for="category_id" class="form-label">Kategori <span class="text-danger">*</span></label>
+                            <select class="form-select " id="category_id" name="category_id" required>
+                                <option value="">Pilih Kategori</option>
+                                                                    <option value="1" >Elektronik</option>
+                                                                    <option value="2" >Dokumen</option>
+                                                                    <option value="3" >Aksesori</option>
+                                                                    <option value="4" >Lainnya</option>
+                                                            </select>
+                                                    </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="pickup_point_id" class="form-label">Titik Pengambilan <span class="text-danger">*</span></label>
+                            <select class="form-select " id="pickup_point_id" name="pickup_point_id" required>
+                                <option value="">Pilih Titik Pengambilan</option>
+                                                                    <option value="1" >Pos Gerbang Utama — Gerbang Utama Kampus</option>
+                                                                    <option value="2" >Pos Fakultas A — Lobby Fakultas A</option>
+                                                                    <option value="3" >Pos Perpustakaan — Lantai 1 Perpustakaan Pusat</option>
+                                                            </select>
+                                                    </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="location_found" class="form-label">Lokasi Penemuan <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control " id="location_found" name="location_found" value="" placeholder="Contoh: Depan Gedung Fakultas Teknik" required>
+                                            </div>
+                    <div class="mb-4">
+                        <label for="photo" class="form-label">Foto Barang</label>
+                        <input type="file" class="form-control " id="photo" name="photo" accept="image/jpeg,image/png,image/jpg">
+                        <div class="form-text">Format: JPG, JPEG, PNG. Maksimal 2MB.</div>
+                                            </div>
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-gradient"><i class="bi bi-check-lg me-1"></i> Simpan</button>
+                        <a href="https://mandatory-gently-tired-presidential.trycloudflare.com/items" class="btn btn-outline-glass">Batal</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    </main>
+
+    
+    <footer class="footer-foundu text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 <strong style="color: rgba(255,255,255,0.7);">FoundU</strong> — Platform Lost & Found Mahasiswa Kampus</p>
+        </div>
+    </footer>
+</body>
+</html>
+
